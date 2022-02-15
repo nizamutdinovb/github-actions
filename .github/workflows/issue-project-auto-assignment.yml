@@ -18,8 +18,9 @@
 
 name: Echo Something
 on:
-  issues:
-    types: [opened]
+  push:
+    branches: 
+      - development
 env:
   GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
 jobs:
